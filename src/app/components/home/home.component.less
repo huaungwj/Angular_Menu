@@ -1,0 +1,74 @@
+@total-width: 750; /*页面宽度*/
+.w{
+  width: 693/40rem;
+  margin: 0 auto;
+}
+/*header*/
+//100 / 700 * 40 = 5.333vw 40px= 1rem
+
+//需要的宽度 / 40(px) = 需要的rem
+header{
+  width: 750/40rem;
+  //background-color: #bfa;
+  padding: 0;
+  margin: 0;
+  /*开启弹性容器*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20 / 40rem;
+  div{
+    display: flex;
+    width: 100% / 3px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    a{
+        color: #5f5750;
+      font-size: 14/40rem;
+      img{
+        height: 50 / 40rem;
+      }
+      p{
+        padding-top: 10px;
+      }
+    }
+
+  }
+}
+
+/*内容区*/
+.content:extend(.w){
+  margin: 20 / 40rem;
+  h3{
+    text-align: center;
+    color: #5f5750;
+    margin-bottom: 30 / 40rem;
+  }
+  ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 40/40rem;
+    align-items: center;
+    flex-wrap: wrap;
+    li{
+      a{
+        color: #000000;
+        display: inline-block;
+      }
+      img {
+        width: 200 / 40rem;
+        margin-bottom: 20/40rem;
+      }
+      p{
+        font-size: 24 / 40rem;
+      }
+      span{
+        font-size: 16 / 40rem;
+      }
+    }
+  }
+}

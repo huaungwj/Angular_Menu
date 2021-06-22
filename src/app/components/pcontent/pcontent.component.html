@@ -1,0 +1,26 @@
+<header *ngFor="let item of list">
+  <img [src]="domain+item.img_url" alt="">
+  <div class="back">
+    <a href="#" [routerLink]="['/home']">返回</a>
+  </div>
+</header>
+
+<div class="content" *ngFor="let item of list">
+
+    <h3>{{item.title}}</h3>
+    <span>{{item.price}}元/份</span>
+
+    <h3>商品详细</h3>
+    <div [innerHTML]="item.content">
+
+    </div>
+</div>
+
+<footer>
+    <span>&nbsp;数量：</span>
+    <input style="width: 50px; height: 38px; border: 2px white; " type="button" value="-" #input1 (click)="reductionOf()" />
+    <input style="text-align: center; width: 50px; height: 32px;" type="text" value="1" #input2 onblur="checkNumber(this)" />
+    <input style="width: 50px; height: 38px; border: 2px white;" type="button" value="+" #input3 (click)="add()" />
+
+  <button (click)="shoppingCar()">加入购物车</button>
+</footer>

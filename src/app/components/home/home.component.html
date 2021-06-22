@@ -1,0 +1,33 @@
+<header>
+  <div class="hot">
+    <a href=""><img src="assets/images/hot.png" alt="">
+      <p>热销榜</p>
+    </a>
+  </div>
+  <div class="menu">
+    <a href=""><img src="assets/images/menu.png" alt="">
+      <p>点过的菜</p>
+    </a>
+  </div>
+  <div class="search">
+    <a href=""><img src="assets/images/search.png" alt="">
+      <p>猜你喜欢</p>
+    </a>
+  </div>
+</header>
+
+<div class="content" *ngFor="let item of list">
+  <h3>{{item.title}}</h3>
+  <ul>
+
+    <li *ngFor="let items of item.list">
+      <a href="#" [routerLink]="['/pcontent',items._id]">
+      <img [src]="domain+items.img_url" alt="">
+      <p>{{items.title}}</p>
+      <span>￥{{items.price}}</span>
+      </a>
+    </li>
+
+
+  </ul>
+</div>

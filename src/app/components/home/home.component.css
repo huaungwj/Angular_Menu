@@ -1,0 +1,68 @@
+/*页面宽度*/
+.w,
+.content {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+/*header*/
+header {
+  width: 18.75rem;
+  padding: 0;
+  margin: 0;
+  /*开启弹性容器*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+header div {
+  display: flex;
+  width: 33.33333333%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header div a {
+  color: #5f5750;
+  font-size: 0.35rem;
+}
+header div a img {
+  height: 1.25rem;
+}
+header div a p {
+  padding-top: 10px;
+}
+/*内容区*/
+.content {
+  margin: 0.5rem;
+}
+.content h3 {
+  text-align: center;
+  color: #5f5750;
+  margin-bottom: 0.75rem;
+}
+.content ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content ul li a {
+  color: #000000;
+  display: inline-block;
+}
+.content ul li img {
+  width: 5rem;
+  margin-bottom: 0.5rem;
+}
+.content ul li p {
+  font-size: 0.6rem;
+}
+.content ul li span {
+  font-size: 0.4rem;
+}
+/*# sourceMappingURL=home.component.css.map */
